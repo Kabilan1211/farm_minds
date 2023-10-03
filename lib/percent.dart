@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'dart:convert';
 
 
 class percent extends StatefulWidget {
@@ -22,10 +20,10 @@ class _percentState extends State<percent> {
           radius: 90,
           lineWidth: 20,
           percent: widget.value,
-          backgroundColor: Colors.blue.shade200,
-          progressColor: Colors.blue.shade700,
+          backgroundColor: Colors.deepPurple.shade200,
+          progressColor: Colors.deepPurple.shade600,
           circularStrokeCap: CircularStrokeCap.round,
-          center: Text( widget.title , style: const TextStyle(fontSize: 20, color: Colors.white),
+          center: Text( widget.title , style: TextStyle(fontSize: 20, color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold),
           ),
           )
       ),

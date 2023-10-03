@@ -13,11 +13,11 @@ class _splashState extends State<splash> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
-    splash: Text("SIH - FARM MINDS", style: TextStyle(color: Colors.blue.shade700, fontSize: 30),),
-    backgroundColor: Colors.black12,
+    splash: Text("SIH - FARM MINDS", style: TextStyle(color: Theme.of(context).colorScheme.secondary, fontSize: 30),),
+    backgroundColor: Theme.of(context).colorScheme.background,
     duration: 3000,
     splashTransition: SplashTransition.fadeTransition,
-    nextScreen: const MyHomePage(title: "Farm Minds", )
+    nextScreen: const MyHomePage(title: Text("Farm Minds"), )
     
     );
   }
